@@ -1,6 +1,6 @@
 {
-  "name": "@lingdong/psvg",
-  "version": "0.0.0",
+  "name": "@antfu/psvg",
+  "version": "0.0.1",
   "description": "Programmable Scalable Vector Graphics -- drawings that draw themselves",
   "main": "dist/psvg.js",
   "module": "dist/psvg.mjs",
@@ -13,7 +13,7 @@
   "scripts": {
     "build": "rimraf dist && tsup psvg.ts --format esm,cjs,iife --dts --global-name PSVG",
     "prepublishOnly": "npm run build",
-    "release": "npx bumpp --all --commit --tag && npm publish && git push"
+    "release": "npx bumpp --all --commit --tag && npm publish --access public && git push"
   },
   "repository": {
     "type": "git",
